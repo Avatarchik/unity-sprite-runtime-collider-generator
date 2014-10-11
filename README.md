@@ -1,20 +1,22 @@
 ##Generating a polygon collider for a sprite at runtime
 
-![](/Screenshots/Fence1.PNG =100x100)
+<img src="/Screenshots/Fence1.PNG"/>
 
 Starting with the image we convert the texture to a binary image.
-![](/Screenshots/FenceBinaryimage.PNG =100x100)
+<img src="/Screenshots/FenceBinaryimage.PNG" style="width: 100px;"/>
 
 We perform some image processing techniques to get the outline of the image.
-![](/Screenshots/FenceDilation.PNG =100x100)
-![](/Screenshots/FenceErosion.PNG =100x100)
-![](/Screenshots/FenceSubtraction.PNG =100x100)
+<div style="position:center">
+<img src="/Screenshots/FenceDilation.PNG" style="width: 100px; display: inline-block"/>
+<img src="/Screenshots/FenceErosion.PNG" style="width: 100px; display: inline-block"/>
+<img src="/Screenshots/FenceSubtraction.PNG" style="width: 100px; display: inline-block"/>
+</div>
 
 From this we follow the outline assigning each pixel as a vertex. We can allow islands( shown in a different colour) and concave shapes.
-![](/Screenshots/FenceVerts.PNG =100x100)
+<img src="/Screenshots/FenceVerts.PNG" style="width: 100px;"/>
 
 Removing the unnecessary vertices we can simplify the collider greatly.
-![](/Screenshots/FenceVertReduced.PNG =100x100)
+<img src="/Screenshots/FenceVertReduced.PNG" style="width: 100px;"/>
 
 This lets us generate a collider for complex sprites.
-![](/Screenshots/FenceFinal.PNG =100x100)
+<img src="/Screenshots/FenceFinal.PNG" style="width: 100px;"/>
