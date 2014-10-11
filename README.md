@@ -6,7 +6,7 @@ Starting with the image we convert the texture to a binary image.
 <img src="/Screenshots/FenceBinaryimage.PNG" style="width: 100px;"/>
 
 We perform some image processing techniques to get the outline of the image.
-<div style="position:center">
+<div style="text-align: center">
 <img src="/Screenshots/FenceDilation.PNG" style="width: 100px; display: inline-block"/>
 <img src="/Screenshots/FenceErosion.PNG" style="width: 100px; display: inline-block"/>
 <img src="/Screenshots/FenceSubtraction.PNG" style="width: 100px; display: inline-block"/>
